@@ -1,0 +1,202 @@
+/* ================= RESET ================= */
+/* Supprime les marges par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= STYLE GLOBAL ================= */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    line-height: 1.6;
+}
+
+/* Conteneur principal (centre le contenu) */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ================= HEADER ================= */
+header {
+    background: #5fa4ea;
+    color: white;
+}
+
+/* Alignement du header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+}
+
+.logo span {
+    color: #3498db;
+}
+
+/* ================= NAVIGATION ================= */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* Espacement entre les liens */
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Style des liens */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Effet au survol */
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #5fa4ea;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Titres */
+h2 {
+    margin-bottom: 10px;
+    color: #5fa4ea;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+/* ================= LISTES ================= */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* ================= CARTES (portfolio) ================= */
+.card {
+    background: #ecf0f1;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Animation hover */
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* ================= FORMULAIRE ================= */
+form {
+    margin-top: 15px;
+}
+
+/* Champs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bouton */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover bouton */
+button:hover {
+    background: #2980b9;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #5fa4ea;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+/* Pour téléphone */
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+}
+.profile{
+    text-align: center;
+    margin-top: 20px;
+}
+.profile img{
+    width: 180px; height: 180 px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+}
+.profile img:hover {
+    transform: scale(3);
+    transition: 1s;
+}
